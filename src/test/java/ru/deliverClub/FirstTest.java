@@ -13,7 +13,7 @@ public class FirstTest {
     @Before
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-        ChromeDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         System.out.println("test start");
 
 
@@ -21,8 +21,6 @@ public class FirstTest {
 
     @Test
     public void firstTest() {
-
-
         driver.get("https://www.delivery-club.ru");
         String title = driver.getTitle();
         Assert.assertTrue(title.equals("Delivery Club — Доставка еды и продуктов"));
@@ -30,16 +28,13 @@ public class FirstTest {
     }
 
     @Test
-    public void firstTest() {
-
-
+    public void firstTest2() {
         driver.get("https://www.delivery-club.ru");
+
         String title = driver.getTitle();
         Assert.assertTrue(title.equals("Delivery Club — Доставка еды и продуктов"));
-
-
-
     }
+
 
     @After
     public void close() {
