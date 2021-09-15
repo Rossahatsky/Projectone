@@ -8,13 +8,12 @@ public class FirstTest {
 
   @Test
   public void firstTest() {
-      System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver 4");
+      System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
       ChromeDriver driver = new ChromeDriver();
 
       driver.get("https://www.delivery-club.ru");
-
       String title = driver.getTitle();
-      Assert.assertTrue(title.equals("Доставка еды из ресторанов Перми — Delivery Club"));
+      Assert.assertTrue(title.equals("Delivery Club — Доставка еды и продуктов"));
       driver.quit();
 
   }
